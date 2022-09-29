@@ -1,15 +1,21 @@
 
 import Card from '../card/card';
-
+import './Health.css'
 const Health = (props) => {
-
+    const { img, name, text, time, age, id } = props.health
 
     return (
-        <div>
-            <h5>another components</h5>
+        <div className='health-container'>
+            <div>
+                {/* <h5>another components</h5> */}
 
-            <img src={props.img} alt="" />
-            <h4>Name:{props.name}</h4>
+                <img src={img} alt="" />
+                <h4>Name:{name}</h4>
+                <h5>{text}</h5>
+                <h5>For Age:{age}</h5>
+                <h5>Time Required:{time}</h5>
+
+            </div>
         </div>
     );
 };
