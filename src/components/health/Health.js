@@ -6,12 +6,20 @@ const Health = (props) => {
 
     return (
         <div className='health-container'>
-            <div>
-                <img src={img} alt="" />
-                <h4>Name:{name}</h4>
-                <h5>{text}</h5>
-                <h5>For Age:{age}</h5>
-                <h5>Time Required:{time} Min</h5>
+            <div className='card-img'>
+                <img className='w-100' src={img} alt="" />
+
+                <div className='card-info'>
+                    <h4>{name}</h4>
+                    <p>{text}</p>
+                    <h5>For Age:{age}</h5>
+                    <h5>Time Required:{time} Min</h5>
+
+                    <div className='btn-div'>
+                        <button className='btn-hanler'>Add to list</button>
+                    </div>
+
+                </div>
 
             </div>
         </div>

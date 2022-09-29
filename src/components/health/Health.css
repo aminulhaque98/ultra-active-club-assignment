@@ -1,5 +1,30 @@
-/* .health-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
+.health-container {
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+}
+
+.card-img img {
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-info {
+
+    margin: 10px;
+}
+
+.btn-hanler {
+    width: 300px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    background-color: darkorchid;
+    border-radius: 10px;
+
+}
+
+/* .btn-div {
+    margin-bottom: 0;
 } */
