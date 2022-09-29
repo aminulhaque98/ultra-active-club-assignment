@@ -21,7 +21,7 @@ const Card = () => {
 
                 <div className='activities-container'>
                     {
-                        cards.map(card => <Health health={card}></Health>)
+                        cards.map(card => <Health health={card} ></Health>)
                     }
                 </div>
                 {/* {

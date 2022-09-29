@@ -2,17 +2,18 @@
     border: 3px solid white;
     border-radius: 10px;
     box-shadow: 5px 10px #888888;
+    position: relative;
 }
 
-.card-img img {
+.health-container img {
     height: 200px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
 .card-info {
-
     margin: 10px;
+    padding-bottom: 40px;
 }
 
 .btn-handler {
@@ -23,9 +24,16 @@
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: absolute;
+    /* margin-bottom: 0; */
+    bottom: 0;
 
 }
 
+.btn-handler:hover {
+    background-color: blue;
+}
+
 /* .btn-div {
-    margin-bottom: 0;
+    
 } */
