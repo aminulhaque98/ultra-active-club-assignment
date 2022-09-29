@@ -2,7 +2,8 @@
 import Card from '../card/card';
 import './Health.css'
 const Health = (props) => {
-    const { img, name, text, time, age, id } = props.health
+    const { img, name, text, time, age } = props.health
+    const { handelAddToCard } = props
 
     return (
         <div className='health-container'>
@@ -16,38 +17,10 @@ const Health = (props) => {
                 <h5>Time Required:{time} Min</h5>
             </div>
 
-            <button className='btn-handler w-100'>Add to list</button>
+            <button onClick={() => handelAddToCard(time)} className='btn-handler w-100'>Add to list</button>
 
         </div>
     );
 };
 
 export default Health;
-
-
-// import { useEffect, useState } from "react";
-// import Card from "../card/card";
-
-
-// const Health = () => {
-
-//     const [healths, setHealths] = useState([]);
-
-//     useEffect(() => {
-//         fetch('health.json')
-//             .then(res => res.json())
-//             .then(data => setHealths(data))
-//     }, [])
-
-
-//     return (
-//         <div>
-//             <h3>anther components</h3>
-//             {
-//                 healths.map(health => <card health={health}></card>)
-//             }
-//         </div>
-//     );
-// };
-
-// export default Health;

@@ -10,7 +10,11 @@ const Card = () => {
         fetch('health.json')
             .then(res => res.json())
             .then(data => setCards(data))
-    }, [])
+    }, []);
+
+    const handelAddToCard = (time) => {
+        console.log(time)
+    }
 
 
     return (
@@ -21,7 +25,7 @@ const Card = () => {
 
                 <div className='activities-container'>
                     {
-                        cards.map(card => <Health health={card} ></Health>)
+                        cards.map(card => <Health health={card} key={card.id} handelAddToCard={handelAddToCard}></Health>)
                     }
                 </div>
                 {/* {
