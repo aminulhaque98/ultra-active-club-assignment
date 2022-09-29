@@ -1,22 +1,15 @@
-import React, { useEffect, useState } from 'react';
+
 import Card from '../card/card';
 
-const Health = () => {
-    const [healths, setHealths] = useState([]);
+const Health = (props) => {
 
-    useEffect(() => {
-        fetch('health.json')
-            .then(res => res.json())
-            .then(data => setHealths(data))
-    }, [])
 
     return (
         <div>
             <h5>another components</h5>
 
-            {
-                healths.map(health => <Card name={health.name} img={health.img}></Card>)
-            }
+            <img src={props.img} alt="" />
+            <h4>Name:{props.name}</h4>
         </div>
     );
 };

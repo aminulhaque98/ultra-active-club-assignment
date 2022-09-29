@@ -1,7 +1,17 @@
-
+import React, { useEffect, useState } from 'react';
+import Health from '../health/Health';
 import './card.css';
 
-const Card = (props) => {
+const Card = () => {
+
+    const [cards, setCards] = useState([]);
+
+    useEffect(() => {
+        fetch('health.json')
+            .then(res => res.json())
+            .then(data => setCards(data))
+    }, [])
+
 
     return (
         <div className='card-container'>
@@ -9,8 +19,13 @@ const Card = (props) => {
                 <h2>Outdoors Morning Exercises ...</h2>
                 <p>Select today’s exercise</p>
 
-                <h4>Name:{props.name}</h4>
-                <img src={props.img} alt="" />
+                {
+                    cards.map(card => <Health name={card.name} img={card.img}></Health>)
+                }
+
+
+
+
             </div>
 
             <div className="activities-details">
