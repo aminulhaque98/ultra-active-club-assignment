@@ -1,12 +1,12 @@
 import React from 'react';
 
-const header = () => {
+const Header = () => {
     return (
         <div>
-            <h1>UtRA-Active-club</h1>
+            <h1>Outdoors Morning Exercises ...</h1>
             <p>Select today’s exercise</p>
         </div>
     );
 };
 
-export default header;
+export default Header;
