@@ -7,13 +7,11 @@ const Health = (props) => {
     return (
         <div className='health-container'>
             <div>
-                {/* <h5>another components</h5> */}
-
                 <img src={img} alt="" />
                 <h4>Name:{name}</h4>
                 <h5>{text}</h5>
                 <h5>For Age:{age}</h5>
-                <h5>Time Required:{time}</h5>
+                <h5>Time Required:{time} Min</h5>
 
             </div>
         </div>

@@ -16,7 +16,7 @@ const Card = () => {
     return (
         <div className='card-container'>
             <div className="exercise-container container">
-                <h2>Outdoors Morning Exercises ...</h2>
+                <h2>All Exercise Activities Here ...</h2>
                 <p>Select today’s exercise</p>
 
                 {
