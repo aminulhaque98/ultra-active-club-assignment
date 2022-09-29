@@ -12,7 +12,10 @@
 
 }
 
-
+.activities-details {
+    /* border: 2px solid wheat; */
+    box-shadow: 5px 15px grey;
+}
 
 .personal-info {
     display: flex;
@@ -21,6 +24,10 @@
     border-radius: 10px;
     justify-content: center;
     margin-bottom: 20px;
+}
+
+.sizing-info {
+    font-size: 30px;
 }
 
 .btn-secDiv {
@@ -40,6 +47,10 @@
     margin: 5px;
     font-size: 20px;
     border-radius: 50%;
+}
+
+.sizing-scnd {
+    font-size: 30px;
 }
 
 .details {

@@ -38,15 +38,15 @@ const Card = () => {
                     </div>
                     <div className='personal-info '>
                         <div>
-                            <strong>70</strong><small >kg</small>
+                            <strong className='sizing-info'>70</strong><small>kg</small>
                             <p>weight</p>
                         </div>
                         <div>
-                            <strong>5.7</strong>
+                            <strong className='sizing-info'>5.7</strong>
                             <p>height</p>
                         </div>
                         <div>
-                            <strong>24</strong><span>yrs</span>
+                            <strong className='sizing-info'>24</strong><span>yrs</span>
                             <p>age</p>
                         </div>
                     </div>
@@ -54,10 +54,10 @@ const Card = () => {
                     <div>
                         <h5>Add A Break</h5>
                         <div className='btn-secDiv'>
-                            <button className='btn-secHandler bg-primary '><span>10</span>m</button>
-                            <button className='btn-secHandler bg-primary'><span>20</span>m</button>
-                            <button className='btn-secHandler bg-primary'><span>30</span>m</button>
-                            <button className='btn-secHandler bg-primary'><span>40</span>m</button>
+                            <button className='btn-secHandler bg-primary '><span className='sizing-scnd'>10</span>m</button>
+                            <button className='btn-secHandler bg-primary'><span className='sizing-scnd'>20</span>m</button>
+                            <button className='btn-secHandler bg-primary'><span className='sizing-scnd'>30</span>m</button>
+                            <button className='btn-secHandler bg-primary'><span className='sizing-scnd'>40</span>m</button>
                             {/* <button className='btn-secHandler'>50s</button> */}
                         </div>
                     </div>
@@ -78,7 +78,7 @@ const Card = () => {
                         </div>
                     </div>
 
-                    <button className='btn-toast w-100 bg-primary'>Break time</button>
+                    <button className='btn-toast w-100 bg-primary'>Activity Completed</button>
                 </div>
             </div>
         </div>
