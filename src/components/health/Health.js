@@ -15,8 +15,8 @@ const Health = (props) => {
                     <h5>For Age:{age}</h5>
                     <h5>Time Required:{time} Min</h5>
 
-                    <div className='btn-div'>
-                        <button className='btn-hanler'>Add to list</button>
+                    <div className='btn-div '>
+                        <button className='btn-handler w-100'>Add to list</button>
                     </div>
 
                 </div>

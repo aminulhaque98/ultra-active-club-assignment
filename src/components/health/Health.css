@@ -15,13 +15,14 @@
     margin: 10px;
 }
 
-.btn-hanler {
-    width: 300px;
+.btn-handler {
     color: white;
     border: none;
     font-size: 20px;
     background-color: darkorchid;
     border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
 }
 

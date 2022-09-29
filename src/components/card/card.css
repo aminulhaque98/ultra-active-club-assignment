@@ -12,8 +12,52 @@
 
 }
 
-/* .exercise-container img {
-    width: auto;
-    width: 324px;
-    height: 200px;
-} */
+
+
+.personal-info {
+    display: flex;
+    gap: 30px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-secDiv {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.btn-secHandler {
+
+    color: white;
+    border: none;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.details {
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.btn-toast {
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
