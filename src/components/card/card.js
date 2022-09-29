@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import Health from '../health/Health';
 import './card.css';
 
@@ -20,7 +22,7 @@ const Card = () => {
     return (
         <div className='card-container'>
             <div className="exercise-container container">
-                <h2 className='text-primary'>All Exercise Activities Here ...</h2>
+                <h2 className='text-primary'> <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon> All Exercise Activities Here ...</h2>
                 <h5>Select today’s exercise</h5>
 
                 <div className='activities-container'>
