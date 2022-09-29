@@ -19,9 +19,11 @@ const Card = () => {
                 <h2>All Exercise Activities Here ...</h2>
                 <p>Select today’s exercise</p>
 
-                {
-                    cards.map(card => <Health health={card}></Health>)
-                }
+                <div className='activities-container'>
+                    {
+                        cards.map(card => <Health health={card}></Health>)
+                    }
+                </div>
                 {/* {
                     cards.map(card => <Health name={card.name} img={card.img} key={card.id}></Health>)
                 } */}

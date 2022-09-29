@@ -3,6 +3,13 @@
     grid-template-columns: 4fr 1fr;
 }
 
+.activities-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
 .exercise-container img {
-    width: 150px;
+    width: 200px;
+    height: 100px;
 }
