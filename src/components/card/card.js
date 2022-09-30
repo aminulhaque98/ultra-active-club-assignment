@@ -10,6 +10,8 @@ const Card = () => {
 
     const [healths, setHealths] = useState([]);
 
+    const [breaks, setBreaks] = useState([]);
+
 
     let total = 0;
     for (const health of healths) {
@@ -23,10 +25,18 @@ const Card = () => {
             .then(data => setCards(data))
     }, []);
 
+    // exercise time handler -------
     const handelAddToCard = (health) => {
         const newHealth = [...healths, health];
         setHealths(newHealth)
 
+    }
+
+    // break time handler -------
+    const handleBreakTime = (event) => {
+
+        const time = event.target.innerText;
+        setBreaks(time);
     }
 
 
@@ -69,10 +79,14 @@ const Card = () => {
                     <div>
                         <h5>Add A Break</h5>
                         <div className='btn-secDiv'>
-                            <button className='btn-secHandler bg-primary '><span className='sizing-scnd'>10</span>m</button>
-                            <button className='btn-secHandler bg-primary'><span className='sizing-scnd'>20</span>m</button>
-                            <button className='btn-secHandler bg-primary'><span className='sizing-scnd'>30</span>m</button>
-                            <button className='btn-secHandler bg-primary'><span className='sizing-scnd'>40</span>m</button>
+                            <button className='btn-secHandler bg-primary '><span onClick={(event) => handleBreakTime(event)} className='sizing-scnd'>10</span>m</button>
+
+                            <button className='btn-secHandler bg-primary'><span onClick={(event) => handleBreakTime(event)} className='sizing-scnd'>20</span>m</button>
+
+                            <button className='btn-secHandler bg-primary'><span onClick={(event) => handleBreakTime(event)} className='sizing-scnd'>30</span>m</button>
+
+                            <button className='btn-secHandler bg-primary'><span onClick={(event) => handleBreakTime(event)} className='sizing-scnd'>40</span>m</button>
+
                             {/* <button className='btn-secHandler'>50s</button> */}
                         </div>
                     </div>
@@ -86,7 +100,7 @@ const Card = () => {
                         </div>
                         <div className='details'>
                             <h5 >Break time:</h5>
-                            <span>Minutes</span>
+                            <strong>{breaks} <span>Minutes</span></strong>
 
                         </div>
                     </div>
