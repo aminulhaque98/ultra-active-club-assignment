@@ -28,6 +28,7 @@ const Card = () => {
         fetch('health.json')
             .then(res => res.json())
             .then(data => setCards(data))
+        getStoreBreak();
     }, []);
 
     // exercise time handler -------
@@ -44,7 +45,7 @@ const Card = () => {
         const time = event.target.innerText;
         setBreaks(time);
         localStorage.setItem("break", JSON.stringify(time));
-        getStoreBreak();
+
     }
 
 
@@ -55,7 +56,7 @@ const Card = () => {
         if (storeBreak) {
             breaks = JSON.parse(storeBreak);
             console.log(breaks)
-            setStoreBreaks(breaks)
+            setStoreBreaks(storeBreak)
         }
         return breaks;
 
