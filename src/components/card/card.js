@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
@@ -61,11 +62,13 @@ const Card = () => {
             <div className="activities-details  ">
                 <div className='container'>
                     <ToastContainer></ToastContainer>
-                    <div>
-                        {/* <img src={require('../card../')}> */}
-                        {/* <img src="../card../src/" alt="" /> */}
-                        <h4>Aminul Haque </h4>
-                        <p>Nabiganj,Habiganj,Sylhet</p>
+                    <div className='personal-info-img'>
+                        <img className='rounded-circle w-25' src={require('../../nihad.png')} alt="" />
+
+                        <div className='location'>
+                            <h4>Aminul Haque </h4>
+                            <p>Nabiganj,Habiganj,Sylhet</p>
+                        </div>
                     </div>
                     <div className='personal-info '>
                         <div>

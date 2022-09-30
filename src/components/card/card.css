@@ -24,6 +24,19 @@
     top: 0;
 }
 
+.personal-info-img {
+    display: flex;
+    text-align: center;
+
+}
+
+.location {
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
 .personal-info {
     display: flex;
     gap: 30px;

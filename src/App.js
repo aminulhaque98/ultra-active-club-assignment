@@ -5,16 +5,12 @@ import Question from './components/question/Question';
 
 
 
-
 function App() {
 
 
   return (
-    // className="App"
     <div className="App">
-
       <Card></Card>
-      {/* <Health></Health> */}
       <Question></Question>
 
     </div>
