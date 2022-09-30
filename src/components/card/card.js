@@ -30,17 +30,19 @@ const Card = () => {
                         cards.map(card => <Health health={card} key={card.id} handelAddToCard={handelAddToCard}></Health>)
                     }
                 </div>
+
                 {/* {
                     cards.map(card => <Health name={card.name} img={card.img} key={card.id}></Health>)
                 } */}
+
             </div>
 
             <div className="activities-details">
                 <div className='container'>
                     <div>
-                        <img src="" alt="" />
+                        <img src="/public/aminul.png" alt="" />
                         <h4>Aminul Haque </h4>
-                        <p>location</p>
+                        <p>Nabiganj,Habiganj,Sylhet</p>
                     </div>
                     <div className='personal-info '>
                         <div>
