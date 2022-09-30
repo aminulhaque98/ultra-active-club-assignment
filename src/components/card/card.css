@@ -69,8 +69,12 @@
     border-radius: 50%;
 }
 
+.btn-secHandler {
+    background-color: darkorchid;
+}
+
 .btn-secHandler:hover {
-    background-color: deeppink;
+    background-color: orange;
 }
 
 .sizing-scnd {
@@ -97,8 +101,12 @@
     padding-bottom: 10px;
 }
 
+.btn-toast {
+    background-color: tomato;
+}
+
 .btn-toast:hover {
-    background-color: deeppink;
+    background-color: blue;
 }
 
 @media screen and (max-width:448px) {

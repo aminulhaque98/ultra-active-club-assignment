@@ -25,7 +25,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
     position: absolute;
-    /* margin-bottom: 0; */
     bottom: 0;
 
 }
@@ -33,7 +32,3 @@
 .btn-handler:hover {
     background-color: blue;
 }
-
-/* .btn-div {
-    
-} */

@@ -15,7 +15,7 @@ const Card = () => {
 
     const [breaks, setBreaks] = useState([]);
     const [storeBreaks, setStoreBreaks] = useState([]);
-    console.log(storeBreaks);
+
 
     let total = 0;
     for (const health of healths) {
@@ -55,7 +55,6 @@ const Card = () => {
         let breaks = {};
         if (storeBreak) {
             breaks = JSON.parse(storeBreak);
-            console.log(breaks)
             setStoreBreaks(storeBreak)
         }
         return breaks;
@@ -109,13 +108,13 @@ const Card = () => {
                     <div>
                         <h5>Add A Break</h5>
                         <div className='btn-secDiv'>
-                            <button className='btn-secHandler bg-primary '><span onClick={(event) => handleBreakTime(event)} className='sizing-scnd'>10</span>m</button>
+                            <button className='btn-secHandler  '><span onClick={(event) => handleBreakTime(event)} className='sizing-scnd'>10</span>m</button>
 
-                            <button className='btn-secHandler bg-primary'><span onClick={(event) => handleBreakTime(event)} className='sizing-scnd'>20</span>m</button>
+                            <button className='btn-secHandler '><span onClick={(event) => handleBreakTime(event)} className='sizing-scnd'>20</span>m</button>
 
-                            <button className='btn-secHandler bg-primary'><span onClick={(event) => handleBreakTime(event)} className='sizing-scnd'>30</span>m</button>
+                            <button className='btn-secHandler '><span onClick={(event) => handleBreakTime(event)} className='sizing-scnd'>30</span>m</button>
 
-                            <button className='btn-secHandler bg-primary'><span onClick={(event) => handleBreakTime(event)} className='sizing-scnd'>40</span>m</button>
+                            <button className='btn-secHandler '><span onClick={(event) => handleBreakTime(event)} className='sizing-scnd'>40</span>m</button>
 
                             {/* <button className='btn-secHandler'>50s</button> */}
                         </div>
@@ -135,7 +134,7 @@ const Card = () => {
                         </div>
                     </div>
 
-                    <button onClick={notify} className='btn-toast w-100 bg-primary'>Activity Completed</button>
+                    <button onClick={notify} className='btn-toast w-100 '>Activity Completed</button>
                 </div>
             </div>
         </div>
