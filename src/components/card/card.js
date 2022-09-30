@@ -14,11 +14,13 @@ const Card = () => {
     const [healths, setHealths] = useState([]);
 
     const [breaks, setBreaks] = useState([]);
-
+    const [storeBreaks, setStoreBreaks] = useState([]);
+    console.log(storeBreaks);
 
     let total = 0;
     for (const health of healths) {
         total = total + health.time;
+
     }
 
 
@@ -36,11 +38,29 @@ const Card = () => {
     }
 
     // break time handler -------
+
     const handleBreakTime = (event) => {
 
         const time = event.target.innerText;
         setBreaks(time);
+        localStorage.setItem("break", JSON.stringify(time));
+        getStoreBreak();
     }
+
+
+    const getStoreBreak = () => {
+        const storeBreak = localStorage.getItem('break');
+
+        let breaks = {};
+        if (storeBreak) {
+            breaks = JSON.parse(storeBreak);
+            console.log(breaks)
+            setStoreBreaks(breaks)
+        }
+        return breaks;
+
+    };
+
     const notify = () => toast("Wow So Easy! and, i can do this");
 
 
@@ -109,7 +129,7 @@ const Card = () => {
                         </div>
                         <div className='details'>
                             <h5 >Break time:</h5>
-                            <strong>{breaks} <span>Minutes</span></strong>
+                            <strong>{breaks}{storeBreaks} <span>Minutes</span></strong>
 
                         </div>
                     </div>
