@@ -37,7 +37,7 @@ const Card = () => {
 
             </div>
 
-            <div className="activities-details">
+            <div className="activities-details  ">
                 <div className='container'>
                     <div>
                         <img src="/public/aminul.png" alt="" />
