@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import Health from '../health/Health';
 import './card.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Card = () => {
 
@@ -38,6 +40,7 @@ const Card = () => {
         const time = event.target.innerText;
         setBreaks(time);
     }
+    const notify = () => toast("Wow So Easy! and, i can do this");
 
 
     return (
@@ -45,6 +48,7 @@ const Card = () => {
             <div className="exercise-container container">
                 <h2 className='text-primary'> <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon> All Exercise Activities Here ...</h2>
                 <h5>Select today’s exercise</h5>
+
 
                 <div className='activities-container'>
                     {
@@ -56,8 +60,10 @@ const Card = () => {
 
             <div className="activities-details  ">
                 <div className='container'>
+                    <ToastContainer></ToastContainer>
                     <div>
-                        <img src="/public/aminul.png" alt="" />
+                        {/* <img src={require('../card../')}> */}
+                        {/* <img src="../card../src/" alt="" /> */}
                         <h4>Aminul Haque </h4>
                         <p>Nabiganj,Habiganj,Sylhet</p>
                     </div>
@@ -105,7 +111,7 @@ const Card = () => {
                         </div>
                     </div>
 
-                    <button className='btn-toast w-100 bg-primary'>Activity Completed</button>
+                    <button onClick={notify} className='btn-toast w-100 bg-primary'>Activity Completed</button>
                 </div>
             </div>
         </div>

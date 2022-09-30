@@ -1,9 +1,14 @@
 
 import './App.css';
 import Card from './components/card/card';
-import Health from './components/health/Health';
 import Question from './components/question/Question';
+
+
+
+
 function App() {
+
+
   return (
     // className="App"
     <div className="App">
@@ -11,6 +16,7 @@ function App() {
       <Card></Card>
       {/* <Health></Health> */}
       <Question></Question>
+
     </div>
   );
 }
