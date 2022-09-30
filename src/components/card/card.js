@@ -8,14 +8,25 @@ const Card = () => {
 
     const [cards, setCards] = useState([]);
 
+    const [healths, setHealths] = useState([]);
+
+
+    let total = 0;
+    for (const health of healths) {
+        total = total + health.time;
+    }
+
+
     useEffect(() => {
         fetch('health.json')
             .then(res => res.json())
             .then(data => setCards(data))
     }, []);
 
-    const handelAddToCard = (time) => {
-        console.log(time)
+    const handelAddToCard = (health) => {
+        const newHealth = [...healths, health];
+        setHealths(newHealth)
+
     }
 
 
@@ -30,10 +41,6 @@ const Card = () => {
                         cards.map(card => <Health health={card} key={card.id} handelAddToCard={handelAddToCard}></Health>)
                     }
                 </div>
-
-                {/* {
-                    cards.map(card => <Health name={card.name} img={card.img} key={card.id}></Health>)
-                } */}
 
             </div>
 
@@ -74,9 +81,7 @@ const Card = () => {
                         <h4>Exercise Details</h4>
                         <div className='details'>
                             <h5>Exercise time:</h5>
-                            <span>Minutes</span>
-
-
+                            <strong>{total} <span>Minutes</span></strong>
 
                         </div>
                         <div className='details'>

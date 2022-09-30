@@ -1,9 +1,10 @@
 
-import Card from '../card/card';
 import './Health.css'
 const Health = (props) => {
+    const { handelAddToCard } = props;
+
     const { img, name, text, time, age } = props.health
-    const { handelAddToCard } = props
+
 
     return (
         <div className='health-container'>
@@ -17,7 +18,7 @@ const Health = (props) => {
                 <h5>Time Required:{time} Min</h5>
             </div>
 
-            <button onClick={() => handelAddToCard(time)} className='btn-handler w-100'>Add to list</button>
+            <button onClick={() => handelAddToCard(props.health)} className='btn-handler w-100'>Add to list</button>
 
         </div>
     );
